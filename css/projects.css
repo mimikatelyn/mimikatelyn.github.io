@@ -1,0 +1,21 @@
+:root {
+    --fontCursive: 'Great Vibes', cursive;
+    --fontNormal: 'Open Sans', sans-serif;
+    --lavender-blush: #FBECF3ff;
+    --silver-pink: #D6B6BCff;
+    --desert-sand: #EAC9B6ff;
+    --heliotrope-gray: #938A9Dff;
+    --beau-blue: #D6E2F3ff;
+    --pale-cerulean: #98C6E7ff;
+    --lightTan: #f3eeea;
+    --bottomClouds: #c8cad7;
+    --darkBlue: #4d516a;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: 	rgb(251, 236, 243);
+}

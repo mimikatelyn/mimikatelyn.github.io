@@ -1,0 +1,255 @@
+/* 
+@font-face {
+    font-family: Noelan Script;
+    src: url("../assets/noelan_script[1].otf") format("opentype");
+    src: local(../assets/noelan_script[1].otf) format(opentype);
+}
+
+@font-face {
+    font-family: Flanella;
+    src: url("../assets/Flanella.ttf") format("truetype");
+} */
+
+:root {
+    --fontCursive: 'Great Vibes', cursive;
+    --fontNormal: 'Open Sans', sans-serif;
+    --lavender-blush: #FBECF3ff;
+    --silver-pink: #D6B6BCff;
+    --desert-sand: #EAC9B6ff;
+    --heliotrope-gray: #938A9Dff;
+    --beau-blue: #D6E2F3ff;
+    --pale-cerulean: #98C6E7ff;
+    --lightTan: #f3eeea;
+    --bottomClouds: #c8cad7;
+    --darkBlue: #4d516a;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    background-image: url(../media/clouds.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.active {
+    background-color: hsla(22, 55%, 82%, .5) !important;
+    border-radius: 20%;
+}
+
+.logo img {
+    padding: 50px;
+    margin: 100px 0;
+    border-radius: 20px;
+}
+
+h1 {
+    font-family: var(--fontNormal);
+    color: hsla(22, 55%, 82%, .8);
+    text-shadow: 1px 1px 2px var(--lavender-blush), 0 0 25px var(--silver-pink), 0 0 5px var(--bottomClouds);
+}
+
+h1 span{
+    font-family: var(--fontCursive);
+    color: #4d516a;
+}
+
+.text-responsive {
+    margin-top: 200px;
+    color: white;
+    font-weight: 300;
+    font-size: calc(100% + 2vw + 3vh);
+    text-shadow: -5px 5px 10px rgba(126, 149, 150, 1), -5px 5px 10px rgba(126, 149, 150, 1), -5px 5px 10px rgba(126, 149, 150, 1);
+}
+
+@media (min-width: 768) {
+    .text-responsive {
+        margin-top: 50%;
+        font-size: calc(100% + 1vw + 2vh);
+    }
+}
+
+nav {
+    margin: 60px;
+    font-family: var(--fontNormal);
+    font-size: xx-large;
+    border-radius: 20px;
+}
+
+nav:hover {
+    text-shadow: 2px 2px 2px var(--lavender-blush), 3px 3px 3px var(--silver-pink), 3px 3px 3px var(--bottomClouds);
+}
+
+nav a:hover {
+    font-size: xx-large;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+
+/* end of header - beginning of main */
+/* projects */
+.projects {
+    margin: 0 auto;
+    position: relative;
+    text-decoration: none;
+}
+
+.projects-title {
+    text-shadow: 3px 3px 3px var(--lavender-blush), 3px 3px 3px var(--silver-pink), 3px 3px 3px var(--bottomClouds);
+}
+
+.projects-title h2 {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    color: #4d516a;
+}
+
+.projects-title span {
+    position: absolute;
+    top: 40%;
+    font-family: var(--fontCursive);
+}
+
+@media (min-width: 320px){
+    .projects-title span {
+        font-size: calc(100% + 2vw);
+    }
+}
+
+@media (min-width: 768px) {
+    .projects-title span {
+        font-size: 4rem;
+        position: absolute;
+        top: 30%;
+    }
+
+    .projects-copy {
+        font-size: calc(100% + 1vw);
+    }
+}
+
+.projects-copy{
+    font-size: calc(100% + 1vw);
+    color: var(--darkBlue);
+    background-image: url(../media/pinkYellow-edit.png);
+}
+
+/* end of projects - beginning of .playground */
+.playground {
+    margin: 100px auto;
+    position: relative;
+    text-decoration: none;
+    background: url(../media/brush-strokeBlue.png);
+}
+
+.playground a {
+    color: #4d516a;
+}
+
+.playground-title {
+    text-shadow: 3px 3px 3px var(--lavender-blush), 3px 3px 3px var(--silver-pink), 3px 3px 3px var(--bottomClouds);
+    padding: 0;
+}
+
+.playground-title h2 {
+    color: #4d516a;
+    padding-top: 80px;
+}
+
+.playground-title span {
+    padding: 0;
+    font-family: var(--fontCursive);
+}
+
+@media (min-width: 320px){
+    .playground-title span {
+        font-size: calc(100% + 2vw);
+    }
+}
+
+@media (min-width: 768px) {
+    .playground-title span {
+        font-size: 6rem;
+    }
+
+    .playground-copy {
+        font-size: calc(100% + 2vw);
+    }
+}
+
+.playground-copy{
+    font-size: calc(100% + 1vw);
+    background-color: rgba(126, 149, 150, .3);
+    color: var(--darkBlue);
+}
+
+/* end of playground - beginning of .aboutMe */
+
+.aboutMe {
+    margin: 100px auto 0;
+    position: relative;
+    text-decoration: none;
+    background: url(../media/clouds.png);
+    color: #4d516a;
+}
+
+.aboutMe-title {
+    text-shadow: 3px 3px 3px var(--lavender-blush), 3px 3px 3px var(--silver-pink), 3px 3px 3px var(--bottomClouds);
+}
+
+.aboutMe-title h2 {
+    color: #4d516a;
+    padding-top: 20px;
+}
+
+.aboutMe-title span {
+    font-family: var(--fontCursive);
+}
+
+@media (min-width: 320px){
+    .aboutMe-title span {
+        font-size: calc(100% + 2vw);
+    }
+}
+
+@media (min-width: 768px) {
+    .aboutMe-title span {
+        font-size: 6rem;
+    }
+
+    .aboutMe-copy {
+        font-size: calc(100% + 1vw);
+    }
+}
+
+.aboutMe-copy{
+    font-size: calc(100% + 1vw);
+    text-align: justify;
+
+}
+.aboutMe-copy ul {
+    float: right;
+}
+
+.aboutMe p {
+    margin-left: 5%;
+}
+
+.aboutMe a {
+    color: #4d516a;
+}
+
+.aboutMe li {
+    display: inline;
+}
+
+
