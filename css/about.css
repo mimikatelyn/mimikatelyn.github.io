@@ -21,7 +21,7 @@ body {
 }
 
 h1 {
-    color: #e2d4b7;
+    color: black;
     font-weight: bold;
     font-family: var(--fontCursive);
     text-shadow: 3px 3px 3px var(--lavender-blush), 3px 3px 3px var(--silver-pink), 3px 3px 3px var(--bottomClouds);
@@ -38,5 +38,5 @@ h1 {
 }
 
 h2 {
-    color: #e2d4b7;
+    /* color: black; */
 }
