@@ -1,0 +1,42 @@
+:root {
+    --fontCursive: 'Great Vibes', cursive;
+    --fontNormal: 'Open Sans', sans-serif;
+    --lavender-blush: #FBECF3ff;
+    --silver-pink: #D6B6BCff;
+    --desert-sand: #EAC9B6ff;
+    --heliotrope-gray: #938A9Dff;
+    --beau-blue: #D6E2F3ff;
+    --pale-cerulean: #98C6E7ff;
+    --lightTan: #f3eeea;
+    --bottomClouds: #c8cad7;
+    --darkBlue: #4d516a;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: 	rgb(251, 236, 243);
+}
+
+h1 {
+    color: #e2d4b7;
+    font-weight: bold;
+    font-family: var(--fontCursive);
+    text-shadow: 3px 3px 3px var(--lavender-blush), 3px 3px 3px var(--silver-pink), 3px 3px 3px var(--bottomClouds);
+}
+
+.photo {
+    margin-top: 100px;
+    background: #e2d4b7;
+}
+
+
+.content {
+
+}
+
+h2 {
+    color: #e2d4b7;
+}
